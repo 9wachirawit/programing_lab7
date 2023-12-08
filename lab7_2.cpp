@@ -1,18 +1,27 @@
-//Dialog of the first example is given below.
+    #include <iostream>
+    using namespace std;
+    //Dialog of the first example is given below.
+    int main(){
+        string nm,mn,bd,x;
+        int cd,gr;
+        cout << "Fahsai: Sawadee ka...Can you tell me your name?\n";
+        cout << "?????: "; 
+        getline(cin,nm);
+        cout << "Fahsai: Wow!!! "<< nm <<" is a really cool name.\n";
+        cout << "Fahsai: I think you are an Engineering student. What is your student ID?\n";
+        cout << nm << ": ";
+        cin >> cd;
+        gr = (cd/10000000)-12;
+        cout << "Fahsai: I think you may be GEAR "<<gr<<". I have a free movie ticket for you.\nFahsai: Let's go to the cinema together!!!\nFahsai: What movie do you want to watch?\n";
+        cout << nm << ": ";
+        cin.ignore();
+        getline(cin,mn);
+        cout << "Fahsai: So....which day are you free to go with me?\n";
+        cout << nm << ": ";
+        getline(cin,bd);
+        cout <<"Fahsai: "<<bd<<"....that is OK!!! I'm looking forward to watching "<<mn<<" with you.\n";
+        cout << nm << ": ";
+        cin >> x;
+        cout <<"Fahsai: 555+ see you "<<bd<<". Bye Bye \\(^ ^)/\n";
+    }
 
-/*
-Fahsai: Sawadee ka...Can you tell me your name?
-?????: Luke Skywalker
-Fahsai: Wow!!! Luke Skywalker is a really cool name.
-Fahsai: I think you are an Engineering student. What is your student ID?
-Luke Skywalker: 590610999
-Fahsai: I think you may be GEAR 47. I have a free movie ticket for you.
-Fahsai: Let's go to the cinema together!!!
-Fahsai: What movie do you want to watch?
-Luke Skywalker: Star Wars VII
-Fahsai: So....which day are you free to go with me?
-Luke Skywalker: Next Monday
-Fahsai: Next Monday....that is OK!!! I'm looking forward to watching Star Wars VII with you.
-Luke Skywalker: May the Force be with you krub
-Fahsai: 555+ see you Next Monday. Bye Bye \(^ ^)/
-*/
